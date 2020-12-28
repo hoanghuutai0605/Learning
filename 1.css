@@ -1,0 +1,31 @@
+.khung{
+    height: 600px;
+    width: 600px;
+    background: cyan;
+    display: flex;
+    flex: content;
+    justify-content: center;
+
+    /* position: relative; */
+
+}
+.khungtrong1{
+    height: 60%;
+    width: 60%;
+    background:pink;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*dịch chuyển sang bên trái và bên phải 50% chiều dài chính nó  */
+     */
+}
+.khungtrong2{
+    height: 40%;
+    width: 40%;
+    background: red;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    
+}

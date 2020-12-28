@@ -1,0 +1,43 @@
+h2 {
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+h2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto; /*change here*/
+    right: 0;/*change here*/
+    width: 0;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 5px;
+}
+h2:hover:before {
+    width: 100%;
+    left: 0;
+} 
+
+.quote {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 30px;
+    position: relative;
+}
+.quote:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    border-top: 10px solid #eee;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}

@@ -1,0 +1,68 @@
+.page {
+    height: 400px;
+    width: 100vw;
+    /* background:yellow; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.page .box {
+    /* background: blue; */
+    height: 100%;
+    width: 20%;
+    position: relative;
+    float: left;
+    
+}
+.box .text{
+    height: 90%;
+    background: cyan;
+    width: 90%;
+    color: rgb(245, 2, 2);
+    position: absolute;
+    margin: 5% 5%;
+    transition: 0.5s;
+    z-index: 2;
+    font-weight: bold ;
+    opacity: 0;
+    border: 2px solid #f1e9ec;
+    /* display: flex; */
+}
+.text h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.text p{
+    text-align:justify;
+}
+.box .img {
+    /* background: red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.text:hover{
+    opacity: 0.5;
+    /* visibility: hidden; */
+}
+/* vướng khúc này */
+.text button{
+    padding: 7px 23px;	
+    background: cyan;
+	font-size: 16px;	
+	border: 1px solid white;	
+	margin: 0 auto;	
+    display: block;
+    cursor: pointer;
+}
+button:hover{
+    background: orange;
+}
