@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Git.css">
+</head>
+<body>
+    <div class="container">
+        <div class="black_div"></div>
+        <button class="btn">Click Here</button>
+    </div>
+    <div class="left_menu">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora aperiam, nihil id asperiores similique impedit animi voluptatem placeat eius tempore sunt consectetur sed illo molestias quisquam sapiente? Accusantium, vitae quis?
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('.container button');
+    console.log(btn);
+    var menu = document.querySelector('.left_menu')
+    console.log(menu);
+    var container = document.querySelector('.container')
+    console.log(container);
+    var black = document.querySelector('.container .black_div')
+    console.log(black);
+    btn.addEventListener('click',function(){
+        menu.classList.add('active');
+        container.classList.add('active2');
+        black.classList.add('active3');
+
+    })
+    black.addEventListener('click',function(){
+        menu.classList.remove('active');
+        container.classList.remove('active2');
+        black.classList.remove('active3');
+    })
+    
+
+    </script>
+</html>
