@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    
+}
+.shadow{
+    position: relative;
+    height: 300px;
+    width: 450px;
+    margin: 200px auto;
+    /* (xoay, màu trên , màu dưới, màu dưới nữa...) */
+    background: linear-gradient(0deg, rgb(72, 72, 73), rgb(19, 19, 19) );
+}
+.shadow::before,
+.shadow::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    
+    background: linear-gradient(45deg,red,yellow,orange,green,blue,purple,red,yellow,orange,green,blue,purple);
+    background-size: 400%;
+    z-index: -1;
+
+    animation: animate 30s linear infinite ;
+}
+.shadow::after{
+    filter: blur(20px);
+}
+@-webkit-keyframes animate {
+    0%{
+        background-position: 0 0 ;
+    }
+    50%{
+        background-position: 200% 0;
+    }
+    100%{
+        background-position: 0 0 ;
+
+    }
+}

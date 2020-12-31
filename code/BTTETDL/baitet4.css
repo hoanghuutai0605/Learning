@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw; height: 100vh;
+    background: rgb(80, 79, 79);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    height: 200px; width: 200px;
+    background-color: transparent;
+
+    position: relative;
+}
+.loader-container .loader-div{
+    position: absolute;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    border: 8px solid rgb(105, 114, 93);
+    border-radius: 50%;
+    border-top: 8px solid rgb(100, 194, 142);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    100%{ transform: rotate(360deg);}
+}
