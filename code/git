@@ -1,0 +1,6 @@
+Git Init
+checkout -b <ten branch> :tao branch mới
+checkout branch :chuyển sang branch khác
+merge  : áp dụng branch B cho A (A --< B)
+git checkout A
+git merge B ( A --< B)
