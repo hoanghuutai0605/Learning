@@ -1,6 +1,14 @@
 Git Init
 checkout -b <ten branch> :tao branch mới
-checkout branch :chuyển sang branch khác
+checkout <ten branch> :chuyển sang branch khác
 merge  : áp dụng branch B cho A (A --< B)
-git checkout A
-git merge B ( A --< B)
+        git checkout A
+        git merge B ( A --< B)
+git branch -D <ten branch> : xóa branch
+
+git reset --soft <ID commit> : trở lại bước trước khi commit
+git reset --mixed <ID commit> : trở lại bước trước khi add
+git reset --hard <ID commit> : xóa hẳn commit -- khi dùng cẩn thẩn mất dữ liệu
+
+git revert <ID commit> : xóa 1 commit cách đó vài ngày rồi tạo thành 1 commit mới mà k ảnh hưởng tới các commit gần đây.
+(khi sử dụng revert dễ bị rối code khi cùng 1 dự án nên phải cẩn thận)

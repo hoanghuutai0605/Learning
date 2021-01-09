@@ -441,12 +441,12 @@ p.bro{
 }
 .right-content .row .new-news {
     /* margin-bottom: 41px; */
-    margin: 25px;
+    /* margin: 25px; */
     height: 400px;
     background-color: aqua;
     /* padding-bottom: 0px; */
-    /* box-sizing: border-box; */
-    padding: 0;
+    box-sizing: border-box;
+    padding-right: 20px;
     border-top: solid 3px rgb(177, 175, 175);
     border-bottom: solid 3px rgb(177, 175, 175);
     display: flex;
@@ -466,10 +466,19 @@ p.bro{
     background-color: pink;
     padding: 0;
     cursor: pointer;
-    padding: 0 20px!important;
+    padding: 0 10px!important;
     box-sizing: border-box;
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.right-content .row .new-news .col-lg-4 .box-new{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid rgb(70, 69, 69);
+    box-sizing: border-box;
+    /* padding: 0 10px; */
+    /* padding-right: 5px; */
 }
 
 /* .right-content .row .new-news .col-lg-4{
