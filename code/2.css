@@ -92,7 +92,7 @@ form {
 }
 form .top-nav-search{
     height: 90%;
-    width: 50%;
+    width: auto;
     display: flex;
     justify-content:center ;
     align-items: center;
@@ -101,7 +101,7 @@ form .top-nav-search{
 /* tham chieu den input type: text */
 form .top-nav-search input[type="text"]{
     font-size: 1.5rem;
-    width: 75%;
+    width: auto;
     border: none;
     
    
@@ -152,7 +152,7 @@ form button.search-button{
 } 
 .top-nav-use-icon{
     height: 100%;
-    width: 30%;
+    width: auto;
     /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
@@ -370,7 +370,7 @@ li:hover{
 
 .right-content .video .diff .avt{
     height: 50.688px;
-    
+    width:50.688px ;
     padding: 0;
     background-image: url(images/mixi.jpg);
     background-size: cover;
@@ -480,66 +480,11 @@ p.bro{
     /* padding: 0 10px; */
     /* padding-right: 5px; */
 }
-
-/* .right-content .row .new-news .col-lg-4{
-    height: 250px;
-    background-color: bisque;
-    padding: 0;
+/* code for md-visible */
+/* ------------------------------------------ */
+.md-visible{
+    display: none;
 }
-.right-content .row .new-news .col-lg-12 .top{
-    height: 47px;
-    width: 100%;
-    background-color: red;
-
-    position: absolute;
-    z-index: 5;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    padding-left: 30px;
-}
-.col-lg-8.text_new {
-    background-color: yellow;
-    height: 150px;
-    padding: 0;
-    position: absolute;
-    top: 47px;
-    z-index: 5;
-    overflow: hidden;
-}
-.bottom {
-    height: 53px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background: blue;
-}
-.right-content .row .new-news .col-lg-4 .new .col-lg-4.image_new {
-    height: 150px;
-    background-image: url(images/LNĐ.jpg);
-    background-size: cover;
-    background-color: orange;
-    position: absolute;
-    top: 47px;
-    right: 0;
-}
-.top_image{
-    height: 28px;
-    width: 28px;
-    background-image: url(images/LNĐ.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    float: left;
-}.top .top_text{
-    margin-left: 15px;
-    font-size: 13px;
-   
-}
-.right-content .a{
-    padding-bottom: 20px;
-} */
 
 
 
