@@ -12,3 +12,29 @@ git reset --hard <ID commit> : xóa hẳn commit -- khi dùng cẩn thẩn mất
 
 git revert <ID commit> : xóa 1 commit cách đó vài ngày rồi tạo thành 1 commit mới mà k ảnh hưởng tới các commit gần đây.
 (khi sử dụng revert dễ bị rối code khi cùng 1 dự án nên phải cẩn thận)
+gitinore : tạo 1 file mới, đẩy all thư mục k cần thiết commit vào đây
+-------------------------------------------------------------------------------------
+github:
+        git remote add origin <link>
+        git remote -v : ds các remote repo
+        git push -u origin master 
+----------------------------------------------------------------------------------------
+lam sao để mỗi lần push thì k cần nhập lại mk?
+git config --global credential.helper "cache --timeout=18000" : lưu mk vào memory trong vòng 5hour
+-----------------------------------------------------------------------------------
+lam sao de tai code cua 1 ng khac tren github ve may 
+git clone <link>
+/////neu nguoi co thay doi gi thi lam sao de update?
+git pull
+-------------------------------------------------------------------------------
+Quy trình làm việc nhóm khi sử dụng git và github
+ 1. git checkout -b <feature/branch>
+ 2. git push origin <branch>
+ 3. create a pull request on github
+ 4. review code
+        4.1. review code online (github)
+        4.2. fetch branch into local to test offline (optional)
+        4.3. approve  the pull request
+ 5. merge to master
+-----------------------------------------------------------------------------------
+Resolve conflict :khắc phục xung đột giữa các commit

@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(247, 247, 247);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-family: monospace;
+  font-size: 40px;
+}
+.btn-container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 400px;
+  margin-top: 90px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(247, 247, 247);
+  height: 100px;
+  width: 100px;
+
+  margin: 0 15px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 7px 7px 14px rgb(235, 234, 234), -4px -4px 13px white,
+    inset 4px 4px 8px rgba(235, 234, 234, 0.2),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s;
+}
+.btn i {
+  font-size: 30px;
+  color: #727272;
+  transition: 0.4s;
+}
+.btn:hover i {
+  transform: scale(0.97);
+}
+.btn:hover {
+  box-shadow: 4px 2px 18px rgb(235, 234, 234), -4px -4px 13px white,
+    inset 8px 8px 16px rgba(235, 234, 234, 0.8),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px);
+}
