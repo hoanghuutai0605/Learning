@@ -1,0 +1,27 @@
+@media(max-width:993px) and (min-width:576px){
+    *{
+        margin: 0!important;
+        /* padding: 0!important; */
+    }
+    .md-visible{
+        display: block;
+    }
+    a{
+        display: none;
+    }
+}
+@media(max-width:720px)and(min-width:540px){
+    a,form{
+        display: none;
+    
+    }
+}
+@media(max-width:540px){
+    .left-menu{
+        display: none;
+    
+    }
+    a, form{
+        display: none;
+    }
+}
