@@ -16,6 +16,9 @@
                 <div class="icon">
                 <i class="fas fa-user-friends"></i>
                 </div>
+                <div class="tool-tip">
+                    <p>Friends</p>
+                </div>
                 <div class="drop-down">
                 <ul class="dd">
                     <li class="li">Tài đệp trai</li>
@@ -28,6 +31,9 @@
             <div class="wrapper">
                 <div class="icon">
                 <i class="fab fa-facebook-messenger"></i>
+                </div>
+                <div class="tool-tip">
+                    <p>Messenger</p>
                 </div>
                 <div class="drop-down">
                     <ul class="dd">
@@ -42,6 +48,9 @@
                 <div class="icon">
                     <i class="fas fa-globe-asia"></i>
                 </div>
+                <div class="tool-tip">
+                    <p>Notice</p>
+                </div>
                 <div class="drop-down">
                     <ul class="dd">
                         <li class="li">Tài đệp trai</li>
@@ -54,6 +63,9 @@
             <div class="wrapper">
                 <div class="icon">
                  <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="tool-tip">
+                    <p>Help & Support </p>
                 </div>
                 <div class="drop-down">
                     <ul class="dd">
@@ -68,6 +80,9 @@
                 <div class="icon">
                     <i class="fas fa-caret-down"></i>
                 </div>
+                <div class="tool-tip">
+                    <p>Account</p>
+                </div>
                 <div class="drop-down">
                     <ul class="dd">
                         <li class="li">Tài đệp trai</li>
@@ -81,15 +96,6 @@
     </div>
     
 </body>
-<script>
-    var icon = document.querySelector('.wrapper');
-    var dropDown = document.querySelector('.drop-down')
-    icon.addEventListener('click',function(){
-        dropDown.classList.add('active')
-    })
-    .icon.addEventListener('click',function(){
-        dropDown.classList.remove('active')
-    })
-
+<script src="menufb.js">
 </script>
 </html>

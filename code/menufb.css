@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   padding-right: 14rem;
   position: relative;
 }
@@ -44,6 +45,32 @@ body {
 }
 .icon i {
   font-size: 1.3rem;
+}
+.tool-tip {
+  position: absolute;
+  height: 1.5rem;
+  width: 8rem;
+  background: #e3dfdf;
+  border-radius: 2px;
+  border: 1px solid #383535a1;
+  top: 40px;
+  left: 10px;
+  transition: 0.3s;
+  transition-delay: 3s;
+  /* overflow: hidden; */
+  opacity: 0;
+  visibility: hidden;
+}
+/* .wrapper:hover .tool-tip {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+} */
+p {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .drop-down {
   width: 13rem;
@@ -80,6 +107,11 @@ li.li {
 li:hover {
   background-color: #b2b2b6;
 }
-.drop-down.active {
+/* code for js  */
+/* ---------------------------------------------------- */
+.icon.active {
+  color: white;
+}
+.drop-down.active2 {
   display: block;
 }
