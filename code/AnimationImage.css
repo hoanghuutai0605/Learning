@@ -128,7 +128,7 @@ li.list-item:nth-child(5) {
   }
 }
 .list-item.out {
-  animation: letout 1s forwards 1;
+  animation: letOut 1s forwards 1;
 }
 @-webkit-keyframes letOut {
   from {
