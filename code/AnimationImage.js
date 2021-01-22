@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         SLIDE[chiSoHienTai].classList.add('show');
     })
+
+
+    
     RIGHT.addEventListener('click', () => {
         for (let i = 0; i < SLIDE.length - 1 ; i++) {
             for (let y = 0; y < SLIDE.length - 1; y++){
