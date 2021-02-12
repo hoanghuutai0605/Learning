@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+
+}
+h2,
+p {
+  color: #144a91;
+  font-weight: 500;
+  line-height: 25px;
+}
+p{
+  opacity: 0.8;
+}
+h3, h4, span {
+  color: #144a91;
+  font-weight: 500;
+
+}
+a{
+  text-decoration: none;
+  color: unset;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to left, #939ff0, #8fd0ee);
+  background: linear-gradient(to right, #a0fdf9, #0ed2f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+input:focus , button:focus{
+  outline: none;
+}
+.glass {
+  background: white;
+  height: 100vh!important;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  overflow: hidden;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: row;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+/* ---------------------------------------------------------- */
+/* code for dashboard */
+.dashboard {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2) );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 2;
+}
+.dashboard:hover {
+  background: white;
+}
+.dashboard-extend{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 170px;
+  transform: translateX(100%);
+  height: 100%;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease-in-out;
+
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start!important;
+  justify-content: flex-start!important;
+  
+}
+.dashboard:hover .dashboard-extend{
+  width: 200px;
+  text-indent: 0;
+  opacity: 1;
+  visibility: visible;
+  background: white;
+}
+.dashboard-extend a:hover{
+  text-decoration: underline;
+  color: #00204b;
+}
+.dashboard_logo,
+.dashboard_logo-ex{
+  flex: 1;
+}
+.dashboard_logo-ex, .dashboard_cart-empty-ex, .dashboard_cart-ex,.dashboard_services-ex, .dashboard_setting-ex{
+  align-items: flex-start!important;
+}
+.dashboard_setting-ex {
+  justify-content: flex-start!important;
+  align-items: center!important;
+}
+i.fas.fa-ad{
+  background-color: #de4552;
+}
+
+i.fas.fa-book{
+  background-color: #f19c2d;
+}
+i.fas.fa-address-card{
+  background-color: #524f87;
+}
+i.fas.fa-plus{
+  background-color: transparent;
+  color: #373553;
+}
+i.fas.fa-shopping-cart {
+  background-color: #2cc6f6;
+}
+i.fas.fa-heart {
+  background-color: #ff6a84;
+}
+.dashboard_services,
+.dashboard_services-ex {
+  flex: 5;
+  /* background: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard_cart-empty,
+.dashboard_cart-empty-ex {
+  flex: 3;
+  width: 100%;
+}
+
+
+.dashboard_cart,
+.dashboard_cart-ex {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard_setting,
+.dashboard_setting-ex {
+  flex: 2;
+  /* background: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------------------------------------------- */
+/* code for main-content */
+.main-content {
+  flex: 14;
+  height: 100%;
+  /* background: #ffc0c0; */
+}
+
+/* -------------------------------------------------- */
+/* code for option-menu */

@@ -1,0 +1,82 @@
+/* code for dashboard */
+* {
+}
+.dashboard i.fas {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: silver;
+  cursor: pointer;
+  color: white;
+}
+.dashboard {
+  flex: 0.8;
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  /* background-color: white; */
+  backdrop-filter: blur(10px);
+}
+
+.dashboard_logo {
+  flex: 1;
+}
+i.fas.fa-ad {
+  background-color: #de4552;
+}
+i.fas.fa-book {
+  background-color: #f19c2d;
+}
+i.fas.fa-address-card {
+  background-color: #524f87;
+}
+i.fas.fa-plus {
+  background-color: transparent;
+  color: #373553;
+}
+i.fas.fa-shopping-cart {
+  background-color: #2cc6f6;
+}
+i.fas.fa-heart {
+  background-color: #ff6a84;
+}
+.dashboard_services {
+  flex: 5;
+  /* background: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.dashboard_cart_empty {
+  flex: 3;
+  /* background: yellow; */
+  width: 100%;
+}
+
+.dashboard_cart {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard_setting {
+  flex: 2;
+  /* background: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

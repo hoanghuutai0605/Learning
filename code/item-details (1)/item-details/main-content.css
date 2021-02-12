@@ -1,0 +1,255 @@
+* {
+}
+
+.rent-process_block {
+  flex: 1;
+}
+.main-content {
+  flex: 14;
+  height: 100%;
+  /* background: #ffc0c0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content_container {
+  height: 90%;
+  width: 96%;
+  /* background-color: beige; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container_user-info {
+  flex: 3;
+  /* background: red; */
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container_user-info .motel-rules {
+  flex: 2;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 11px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.motel-rules .item-details_info {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  scroll-snap-type: y mandatory;
+  /* -webkit-overflow-scrolling: touch; */
+}
+.item-details_info::-webkit-scrollbar {
+  width: 5px !important;
+  background: #a0fdf9;
+}
+.item-details_info::-webkit-scrollbar-thumb {
+  background: #0ed2f7;
+}
+._1status {
+  /* scroll-snap-align: start; */
+  scroll-snap-stop: always;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transition: 0.25s;
+}
+
+.motel-rules ._1status:hover {
+  transform: scale(1.05);
+}
+
+.motel-rules ._1status:hover p {
+  color: #00204b !important;
+}
+
+.motel-rules ._1status p {
+  color: #426696 !important;
+  transition: 0.25s;
+}
+
+.container_user-info .motel-info {
+  flex: 0.8;
+  width: 90%;
+  margin-top: 3rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+}
+.motel-info .boss-avatar {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  object-fit: cover;
+  background: url('../images/bloom.jpg');
+  background-size: cover;
+}
+.motel-info .motel-boss {
+  margin-top: 2.5rem;
+}
+.main-content_map {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+.main-content_map .google-map,
+.main-content_map .motel-imgs {
+  flex: 3;
+  width: 95%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.main-content_map .google-map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-content_map .motel-imgs {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.motel-imgs .motel-imgs_wrapper {
+  flex: 1;
+  width: 100%;
+  gap: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.motel-imgs_wrapper .motel-img {
+  width: 18rem;
+  height: 12rem;
+  background: white;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+.motel-imgs_wrapper .motel-img img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.motel-imgs i {
+  position: absolute;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25;
+  opacity: 0;
+}
+i.fas.fa-arrow-left {
+  left: 0;
+}
+i.fas.fa-arrow-right {
+  right: 0;
+}
+.motel-imgs:hover i {
+  opacity: 1;
+}
+/* ------------------------------------------------------- */
+/* code for rent-process */
+.rent-process {
+  height: 10rem;
+  width: 5rem;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+.rent-process_block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  opacity: 0.8;
+}
+.rent-process_block:hover {
+  opacity: 1;
+}
+.rent-process_block i {
+  font-size: 20px;
+  color: white;
+}
+.rent-process_block p {
+  color: white;
+}
+
+.love-btn {
+  background: pink;
+}
+.rent-btn {
+  background: #0ed2f7;
+}
+/* ==============================================================================
+============================================================================== */
+.top_nav {
+  display: none;
+}

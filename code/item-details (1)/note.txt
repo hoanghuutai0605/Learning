@@ -1,0 +1,7 @@
+1. Tạo riêng 2 file nữa, tên file là tablet-responsive.css (870px) và mobile-responsive.css (570px) rồi code vào đó. Không code vào các file gốc.
+2. Thanh navbar ở giao diện web là phía thanh phía bên trái, nhưng khi vào 2 giao diện tablet và mobile nó nằm phía bên dưới màn hình (dùng position: fixed hoặc js) để cố định ở bottom của màn hình. (Xem ảnh ví dụ)
+3. Không cần làm js nha
+4. Ảnh cắt bị lỗi nhưng Phát chưa fix trong file AI được nên cắt theo file html gốc nha.
+4. File cắt bằng Adobe Illutrator nên sẽ ko có file gốc (còn nếu vẫn muốn lấy thì inbox nhá), m bỏ file vào photoshop rồi chấm màu, đo kích thước nhá.
+5.Nếu thấy giao diện chưa hợp lí chỗ nào, nhắn tin qua zalo để hỏi và góp ý.
+6. Qua Tết gửi lại nhá =))
