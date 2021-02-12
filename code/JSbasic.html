@@ -31,5 +31,21 @@
         menu.classList.remove('active');
         
     })
+    // hàm canh thơi gian, sau time đó thì nó sẽ thực hiện
+//     var time = setTimeout((/*tên function*/) => {},/*thơi gian thực hiện*/);
+// //    xóa setTimeout 
+//     clearTimeout(time);
+    //iife -> ->hàm tự gọi
+    var time = setInterval(() => {
+        console.log('object');
+    }, 1000);
+
+    var pause = (() => {
+        setTimeout(()=> {
+            clearInterval(time)
+        }, 10000);
+    })();
+    // pause();
+    
 </script>
 </html>
